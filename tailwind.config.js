@@ -5,9 +5,14 @@ module.exports = {
 		//root index files add this
     "./*.{html,js}",
     "./node_modules/flowbite/**/*.js",
+    "./pages/**/*.html",
   ],
   theme: {
-    extend: {},
+    extend: {
+      width: {
+        '90': '98%',
+      }
+    },
     colors: {
       transparent: 'transparent',
       white: '#ffffff',
@@ -34,6 +39,9 @@ module.exports = {
 
       '2xl': '1536px',
       // => @media (min-width: 1536px) { ... }
+    },
+    fontSize: {
+      standard: '10rem'
     }
   },
   plugins: [
